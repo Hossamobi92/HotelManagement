@@ -4,7 +4,7 @@ public class Room {
     private int zimmernummer;
     private String zimmerkategorie;
     private double preis;
-    private String belegung;
+    private boolean belegung;
 
 
 
@@ -12,7 +12,7 @@ public class Room {
         this.zimmernummer = zimmernummer;
         this.zimmerkategorie = zimmerkategorie;
         this.preis = preis;
-        this.belegung = belegung;
+        this.belegung = false;
     }
 
     public int getZimmernummer() {
@@ -39,12 +39,12 @@ public class Room {
         this.preis = preis;
     }
 
-    public String getBelegung() {
+    public boolean getBelegung() {
         return belegung;
     }
 
-    public void setBelegung(String belegung) {
-        this.belegung = belegung;
+    public boolean setBelegung(boolean belegung) {
+        return belegung;
     }
 
 
